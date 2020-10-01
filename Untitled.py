@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[35]:
-
-
 from sklearn import datasets
 import matplotlib.pyplot as plt
 import numpy as np
@@ -13,9 +9,6 @@ from sklearn.preprocessing import normalize
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import StratifiedKFold
     
-
-
-# In[67]:
 
 
 #carico il dataset
@@ -60,10 +53,3 @@ for train_index, test_index in skf.split(altri, y):
     y_pred[test_index, 0] = clf.predict(X_test)
     #print(accuracy_score(y_test, clf.predict(X_test)))
     print(y_train,y_test)
-
-
-# In[ ]:
-
-
-
-
